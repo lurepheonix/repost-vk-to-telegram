@@ -292,7 +292,7 @@ class Formatter {
         // Markdown2 requires extensive escaping, but we must not break links
         let md2escape = async (text) => {
             // Escape everything except links (including link text)
-            let tgescape = /(\[[^\][]*]\(http[^()]*\))|[-_.+?!#^*~|=$[\](){}\\]/gi
+            let tgescape = /(\[[^\][]*]\(http[^()]*\))|[-_.+?!#^`>*~|=$[\](){}\\]/gi
             text = text.replace(tgescape, (x, y) => y ? y : '\\' + x)
             // Escape text in links
             let regex = /\[[^\]]+\]\(/
