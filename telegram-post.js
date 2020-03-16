@@ -237,8 +237,8 @@ class Formatter {
         /* 2. If we can't send text as caption, check whether there are any videos/links in the post.
         If there are both, send videos as separate Telegram posts, and attach the link to the text.
         Also, if there is more than one video, send all videos as separate Telegram posts to maintain their original order. */
-                if (post.types.video === true && !post.types.link === true) {
-                    if (post.videos.length = 1) {
+                if (post.types.video === true && post.types.link === false) {
+                    if (post.videos.length == 1) {
                         post.text = post.text + "\n\n" + post.videos[0]
                         delete post.videos
                         post.types.video = false
