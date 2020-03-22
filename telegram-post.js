@@ -22,7 +22,7 @@ class TelegramPost {
             if (process.env.extended_adblocker == 0) {
                 const { adblockerRules } = require('./adblocker_rules.js')
                 for (let a in adblockerRules) {
-                    if (vkPost.text.search(adblockerRules[a]) != -1) {
+                    if (vkPost.text.toLowerCase().search(adblockerRules[a].toLowerCase()) != -1) {
                         block = true
                     }
                 }
