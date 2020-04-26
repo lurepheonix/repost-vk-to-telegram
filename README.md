@@ -172,3 +172,15 @@ Upgrade from remote repository:
 `git pull`
 
 Reinstall dependencies.
+
+## Future development
+
+### TODO
+- Rework bot from scratch (yes, again, v2.0)
+
+### Planned features
+- Add web UI with settings
+- Use single bot for reposting from VK
+- Repost from many different VK groups/pages to many Telegram groups/chats (single VK group can be paired to many Telegram chats)
+- Can set polling interval for each VK/Telegram group pair within the bot
+- Allow multiple users to add reposting group pairs (under consideration)
