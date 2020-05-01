@@ -44,11 +44,11 @@ Or, with npm:
 
 Use `npm install package` or `yarn add package` to install a one from the following list.
 
-| Database  | Package |
-|-----------|---------|
-| MySQL     | mysql2  |
-| SQLite    | sqlite  |
-| PostgreSQL| pg      |
+| Database  | Package  |
+|-----------|----------|
+| MySQL     | mysql2   |
+| SQLite    | sqlite@3 |
+| PostgreSQL| pg       |
 
 Great, your bot is installed!
 
